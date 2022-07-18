@@ -1,0 +1,206 @@
+.mainSection {
+  width: 90%;
+  min-height: 100vh;
+  box-shadow: 0 15px 30px 1px grey;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #2a2f42, #73a5df);
+  color: white;
+  margin: 3rem auto;
+  padding: 4rem 3rem;
+}
+
+.container {
+  padding: 2rem 2rem;
+  text-align: left;
+}
+
+.container h3 {
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 span {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.container textarea {
+  background-color: inherit;
+}
+
+.container option:nth-child() {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.removeButton {
+  height: 2rem;
+}
+.container button:hover {
+  background-image: linear-gradient(90deg, #2a2f42, #73a5df);
+}
+
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+.input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: inherit;
+}
+.input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+.label {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.input:focus ~ .label,
+.input:valid ~ .label {
+  top: -20px;
+  font-size: 14px;
+  color: white;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 2px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+.input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.submitButton:hover {
+  background-color: white;
+  color: #2a2f42;
+  /* background-image: linear-gradient(90deg, #2a2f42, #32649c); */
+  /* color: white;
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+    margin: 1rem auto 0.5rem;
+    height: 3rem; */
+}
+
+/* .imageSection {
+  margin: 3rem auto;
+  padding: 5rem 5rem;
+} */
+
+.imageDiv {
+  height: 35vh;
+  /* width: 200; */
+  padding: 0;
+}
+
+.imageDiv img {
+  height: 100%;
+  width: 100%;
+}
+
+/* .imageDiv img:hover {
+  z-index: 99;
+
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */

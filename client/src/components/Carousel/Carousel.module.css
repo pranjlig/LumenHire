@@ -1,0 +1,42 @@
+.carouselOuter {
+  height: 80vh;
+  margin-top: 2%;
+  width: 100vw;
+}
+
+.carouselFinal {
+  height: 100%;
+}
+
+.hDiv {
+  background-image: linear-gradient(
+    rgba(42, 47, 66, 0.9),
+    rgba(115, 165, 223, 0.9)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.imageDiv {
+  background-image: linear-gradient(
+      rgba(42, 47, 66, 0.8),
+      rgba(115, 165, 223, 0.7)
+    ),
+    url("../../assets/carousel-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right;
+  /* height: 100vh; */
+}
+
+.hDiv h1 {
+  /* margin-left: auto;
+  margin-right: auto; */
+  line-height: 1.5em;
+  font-weight: 900;
+}

@@ -1,0 +1,22 @@
+.imageSection {
+  margin: 3rem auto;
+  padding: 5rem 5rem;
+}
+
+.imageDiv {
+  height: 35vh;
+  /* width: 200; */
+  padding: 0;
+}
+
+.imageDiv img {
+  height: 100%;
+  width: 100%;
+}
+
+.imageDiv img:hover {
+  z-index: 99;
+
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,23 @@
+.nav {
+  margin-top: 1em;
+}
+
+.brand {
+  background-image: linear-gradient(90deg, #2a2f42, #73a5df);
+  background-clip: text;
+  color: transparent;
+}
+
+.searchButton {
+  background-image: linear-gradient(90deg, #2a2f42, #73a5df);
+  color: white;
+}
+
+.userImage {
+  filter: opacity(0.5) drop-shadow(0 0 0 #2a2f42);
+}
+
+.profileOptions:hover {
+  background-image: linear-gradient(90deg, #2a2f42, #73a5df);
+  color: white;
+}
